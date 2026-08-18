@@ -5,6 +5,8 @@ Substrata is a desktop-first Next.js application designed to provide a highly se
 
 This project was built as a rapid high-fidelity prototype, primarily using Stitch and Antigravity.
 
+![alt text](source/substrata.jpg)
+
 ## Deployed Links
 
 #### Github Source files (HERE):

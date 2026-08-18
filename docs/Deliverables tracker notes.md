@@ -1,32 +1,30 @@
-# Senior Design Engineer Task
+# Deliverables
 
-The brief (fictional)
-A senior decision-maker at a regulated, document-heavy organization – you can pick the sector: legal, pharma, intelligence, financial regulation - is about to see a product for the first time. They have 90 seconds before they decide whether to take the meeting further.
+TODO
 
-The product: a tool that lets their team ask plain-English questions of the organisation's private library - internal reports, archived PDFs, spreadsheets, scans and returns sourced answers with citations back to the original document. Auditable. Nothing leaves their environment.
-
-You have one page to make them lean in.
-Pick the name. Pick the sector. Invent the brand. Design and build the page.
- 
-## Constraints
-- Time budget: 2 hours, wall clock. Treat it like a real OD ask 
-- ambiguous brief, sharp output, ship.
-- Built with AI assistance. Claude Code, Codex, Cursor, v0 - your choice. We expect this. It's how the role works day-to-day.
-- Stack: Next.js + Tailwind + TypeScript. Same stack you'd use here.
-- One page. Desktop-first. Mobile is bonus, not required.
-- Original work. No template kits, no starter landing pages.
- 
-## Deliverables
+# 1
 1. Deployed link (Vercel/Netlify/anywhere) and GitHub repo.
+- set up and initialise Github repo
+- deploy to cloudflare?
+
 2. A short note (≤200 words) covering:
     - Name, sector, and the single feeling you wanted the decision-maker to walk away with
     - Two design decisions you made and why
     - One thing you cut for time and would add back with another hour
+
+
 3. An honest line on AI usage: which tool, roughly what you prompted for, where you intervened by hand. We're not testing whether you used AI - we're testing how you steered it.
- 
-## What we're looking for
-- Taste under time pressure. Restraint, hierarchy, typography, spacing. Things that don't shout "AI-generated landing page, March 2026."
-- Judgement on fidelity. Where did you polish? Where did you let it stay rough? Why?
-- Direction over dictation when working with AI. A good design engineer steers the model with strong opinions, doesn't just accept the first output.
-- Code quality proportionate to the task. Clean enough to hand to the next person. Not over-engineered.
- 
+
+# 2
+A short note (≤200 words) covering:
+Name: 
+Sector:
+The single feeling you wanted the decision-maker to walk away with...
+
+Two design decisions you made and why
+
+One thing you cut for time and would add back with another hour
+
+"A desktop landing page for a highly secure enterprise B2B product called Substrata. It's designed for Chief Restructuring Officers in regulated industries like Thames Water to interrogate decades of internal documents (PDFs, spreadsheets, legal precedents) using plain-English questions without data leaving their environment. The vibe must be serious, heavily audited, professional, highly secure, high-contrast, austere (think deep navy, slate gray, stark white, clean typography like Inter). Section 1 (Hero): Headline 'Total visibility into your regulatory reality', subheadline 'Securely interrogate decades of internal reports and legal precedents. 100% auditable. Zero data leaves your environment.' with a CTA 'See Live Demo'. Section 2: A mockup of the UI showing a search bar asking 'How many pollution incidents in 2019 violated the 1991 Water Industry Act?' returning a cited answer. Section 3: Key Features (Verifiable Citations, On-Premise/VPC Deployment, Unlocks Unstructured Data)."
+} 
+DONE

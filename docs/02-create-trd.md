@@ -5,7 +5,7 @@ To create a lean and actionable Technical Requirements Document (TRD), based on 
 
 ## 2. Source Documents
 *   `/docs/01-project-prd.md`
-*   `/prompt-library/02-PROMPT-TRD-setup.md`
+*   `/docs/01-project-HLB.md`
 
 ## 3. Process
 This process must be iterative. Complete one section and wait for user approval before proceeding to the next.

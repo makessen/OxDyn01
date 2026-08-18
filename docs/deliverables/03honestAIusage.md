@@ -40,5 +40,7 @@ You have one page to make them lean in. Pick the name. Pick the sector. Invent t
 - My Macbook is getting slow and too old
 - improve project scaffolding to enable more rapid start.
 - have a different accelerator for the 'one-shot' idea - I have used a quick hand drawn sketch previously - I should use that to guide the initial generation.
-- I susually use propts to docuemnt progress and build a project memory... I used more that the 2 hours to ;tidy up' the documents.
+- code quality is superficial prototype and not ready for production
+- I usually use prompts to document progress and build a project memory... I used more than the 2 hours to tidy up the documents.
+- check versions of libraries and ensure the environment is set up BEFORE STARTING as I spent a long time debugging issues with my .next and .react version conflicts.
 

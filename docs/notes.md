@@ -1,7 +1,7 @@
-# Notes
+# Rough Notes
 12:40 start
 12:58 decide on sector = Legal
-12:59 Decide on Regulated, Document-heavy Organisation: Thames Water
+12:59 Decide on Regulated, Document-heavy Organisation = Thames Water
 13:01 Decide on Senior Decision maker = [Julian Gething - Chief Restructuring Officer](https://www.thameswater.co.uk/about-us/governance/our-board/julian-gething)
 Input sources:
 https://www.thameswater.co.uk/about-us/regulation/our-five-year-plan
@@ -35,3 +35,23 @@ https://www.thameswater.co.uk/edm-map
 
 Data sources:
 various xlsx files downloaded from Thames Water.
+
+# 13:41 OK taking too long - I will one-shot the brief into Stitch and see what happens...
+
+13:42 left Skitch to initiate design whilst I completed some of the other deliverables/notes.
+
+14:36 the one shot wasn't too shabby
+I iterated the design to make a dashboard rather than a landing page.
+further iterations included the water netwrk map.
+and adding security toast style alerts - to RININFORCE to the stakeholders that this is a secure and local-data first system.
+
+I asked this to be regenerated in code
+
+14:38 - two minutes left... I will check the generated code and deploy.
+
+14:00 wanted to try mobile version generation... re-exporting screen and final uploading to Netlify
+
+I feel my 2020 mac is getting toooooooo sloooow for this :(
+
+15:11 generating mobile version
+and finishing documents.

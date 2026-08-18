@@ -1,168 +1,206 @@
-import { Shield, Server, FileSearch, ArrowRight, FileText, CheckCircle2 } from 'lucide-react';
+import Link from 'next/link';
 
-export default function Home() {
+export default function SubstrataDashboard() {
   return (
-    <main className="min-h-screen bg-slate-900 text-slate-50 selection:bg-blue-600 selection:text-white">
-      {/* Navigation */}
-      <nav className="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-blue-500 rounded-sm flex items-center justify-center">
-              <div className="w-2 h-2 bg-slate-900 rounded-sm" />
-            </div>
-            <span className="font-bold tracking-tight text-lg uppercase tracking-widest text-slate-200">Substrata</span>
-          </div>
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
-            <a href="#" className="hover:text-slate-100 transition-colors">Platform</a>
-            <a href="#" className="hover:text-slate-100 transition-colors">Security</a>
-            <a href="#" className="hover:text-slate-100 transition-colors">Compliance</a>
-            <button className="bg-slate-100 text-slate-900 px-4 py-2 rounded-sm hover:bg-white transition-colors flex items-center gap-2 font-semibold">
-              Request Access
-            </button>
-          </div>
-        </div>
-      </nav>
+    <div className="antialiased h-screen flex overflow-hidden font-body-md text-body-md bg-background text-on-background w-full">
 
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-28 border-x border-slate-800 border-dashed">
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-mono font-medium mb-8">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-            </span>
-            SOC2 TYPE II & ISO 27001 CERTIFIED
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight text-white">
-            Total visibility into your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">regulatory reality</span>.
-          </h1>
-          <p className="text-xl text-slate-400 mb-12 max-w-2xl leading-relaxed">
-            Securely interrogate decades of internal reports and legal precedents. 100% auditable. Zero data leaves your environment.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-sm transition-colors flex items-center justify-center gap-2 font-semibold text-lg">
-              See Live Demo <ArrowRight className="w-5 h-5" />
-            </button>
-            <button className="bg-transparent border border-slate-700 hover:border-slate-500 text-slate-300 px-8 py-4 rounded-sm transition-colors font-semibold text-lg">
-              Read Security Brief
-            </button>
-          </div>
-        </div>
-      </section>
 
-      {/* UI Mockup Section */}
-      <section className="border-y border-slate-800 bg-slate-800/20">
-        <div className="max-w-7xl mx-auto px-6 py-20 border-x border-slate-800 border-dashed">
-          <div className="rounded-lg border border-slate-700 bg-slate-900 shadow-2xl overflow-hidden ring-1 ring-white/10">
-            {/* Window Header */}
-            <div className="bg-slate-800/80 border-b border-slate-700 px-4 py-3 flex items-center justify-between">
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-slate-600" />
-                <div className="w-3 h-3 rounded-full bg-slate-600" />
-                <div className="w-3 h-3 rounded-full bg-slate-600" />
-              </div>
-              <div className="text-xs font-mono text-slate-500 flex items-center gap-2">
-                <Shield className="w-3 h-3" /> SECURE TUNNEL ACTIVE
-              </div>
-            </div>
-            
-            {/* App Body */}
-            <div className="p-6 md:p-10">
-              <div className="max-w-3xl mx-auto">
-                <div className="mb-8 relative group">
-                  <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                  <div className="relative bg-slate-800 border border-slate-600 rounded-lg p-4 flex items-center gap-4">
-                    <FileSearch className="w-6 h-6 text-blue-400 shrink-0" />
-                    <input 
-                      type="text" 
-                      readOnly
-                      value="How many pollution incidents in 2019 violated the 1991 Water Industry Act?" 
-                      className="bg-transparent border-none outline-none w-full text-slate-200 text-lg md:text-xl font-medium focus:ring-0"
-                    />
-                  </div>
-                </div>
+<nav className="w-[240px] border-r border-surface-variant bg-surface-container flex flex-col h-full z-20 flex-shrink-0">
+<div className="px-lg py-md border-b border-surface-variant flex items-center h-[64px]">
+<Link href="/mobile">
+<div className="font-display-lg text-[24px] leading-[32px] font-bold tracking-tight text-on-surface cursor-pointer hover:opacity-80 transition-opacity">
+            Substrata
+        </div>
+</Link>
+</div>
+<div className="flex-1 overflow-y-auto py-md px-sm flex flex-col gap-2">
+<a className="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant" href="#">
+<span className="material-symbols-outlined text-[20px]">dashboard</span>
+<span className="font-body-sm font-semibold">Dashboard</span>
+</a>
+<a className="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span className="material-symbols-outlined text-[20px]">warning</span>
+<span className="font-body-sm">Incidents</span>
+</a>
+<a className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-surface-container-high transition-colors bg-secondary-container text-on-secondary-container" href="#">
+<span className="material-symbols-outlined text-[20px]">map</span>
+<span className="font-body-sm">Maps</span>
+</a>
+<a className="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span className="material-symbols-outlined text-[20px]">gavel</span>
+<span className="font-body-sm">Regulations</span>
+</a>
+</div>
+<div className="border-t border-surface-variant p-sm">
+<a className="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span className="material-symbols-outlined text-[20px]">settings</span>
+<span className="font-body-sm">Settings</span>
+</a>
+</div>
+</nav>
 
-                {/* Answer Box */}
-                <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8 relative">
-                  <div className="absolute -top-3 left-8 bg-blue-600 text-xs font-mono font-bold px-2 py-1 rounded-sm uppercase tracking-wider">
-                    Audited Response
-                  </div>
-                  
-                  <p className="text-lg text-slate-300 leading-relaxed mb-6 mt-2">
-                    In 2019, <strong className="text-white">14 incidents</strong> were identified as direct violations of the 1991 Water Industry Act. The majority of these related to unauthorized storm overflow discharges documented across internal compliance audits.
-                  </p>
-                  
-                  {/* Sources */}
-                  <div className="border-t border-slate-700 pt-6">
-                    <h4 className="text-xs font-mono uppercase tracking-widest text-slate-500 mb-4">Cryptographically Verified Sources</h4>
-                    <div className="grid gap-3">
-                      <div className="flex items-center justify-between p-3 bg-slate-800 border border-slate-700 rounded hover:border-slate-500 transition-colors cursor-pointer group">
-                        <div className="flex items-center gap-3">
-                          <FileText className="w-5 h-5 text-slate-400 group-hover:text-blue-400 transition-colors" />
-                          <span className="font-mono text-sm text-slate-300">PDF_Audit_2019_Report_Final.pdf</span>
-                        </div>
-                        <span className="text-xs text-slate-500 font-mono">Pg 42, Para 3</span>
-                      </div>
-                      <div className="flex items-center justify-between p-3 bg-slate-800 border border-slate-700 rounded hover:border-slate-500 transition-colors cursor-pointer group">
-                        <div className="flex items-center gap-3">
-                          <FileText className="w-5 h-5 text-slate-400 group-hover:text-blue-400 transition-colors" />
-                          <span className="font-mono text-sm text-slate-300">EWCA_Crim_2019_1344_Judgment.pdf</span>
-                        </div>
-                        <span className="text-xs text-slate-500 font-mono">Line 118</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<div className="flex-1 flex flex-col h-full overflow-hidden">
 
-      {/* Features Section */}
-      <section className="max-w-7xl mx-auto px-6 py-24 md:py-32 border-x border-slate-800 border-dashed">
-        <div className="grid md:grid-cols-3 gap-12">
-          <div>
-            <div className="w-12 h-12 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center mb-6">
-              <CheckCircle2 className="w-6 h-6 text-blue-400" />
+<header className="h-[64px] border-b border-surface-variant bg-surface-container-low flex items-center justify-between px-lg flex-shrink-0 z-10">
+<div className="flex items-center gap-4 w-full max-w-2xl">
+<div className="relative w-full">
+<span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input className="w-full bg-surface-container border border-surface-variant rounded-lg py-2 pl-10 pr-4 text-body-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all text-on-surface placeholder-on-surface-variant" placeholder="Search incidents, regulations, locations..." type="text"/>
+</div>
+</div>
+<div className="flex items-center gap-4">
+<button className="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors">
+<span className="material-symbols-outlined">notifications</span>
+<span className="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span>
+</button>
+<div className="w-8 h-8 rounded-full bg-primary-container border border-primary text-primary flex items-center justify-center font-bold text-sm">
+                JS
             </div>
-            <h3 className="text-xl font-bold mb-4 text-white">Verifiable Citations</h3>
-            <p className="text-slate-400 leading-relaxed">
-              Every generated answer is strictly tied to your original source documents. Click any claim to view the exact paragraph in your PDF or spreadsheet. Absolute transparency.
-            </p>
-          </div>
-          <div>
-            <div className="w-12 h-12 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center mb-6">
-              <Server className="w-6 h-6 text-blue-400" />
-            </div>
-            <h3 className="text-xl font-bold mb-4 text-white">On-Premise / VPC</h3>
-            <p className="text-slate-400 leading-relaxed">
-              Complete data sovereignty. Substrata deploys entirely within your firewall. Your proprietary data, legal risk models, and internal queries never leave your environment.
-            </p>
-          </div>
-          <div>
-            <div className="w-12 h-12 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center mb-6">
-              <FileSearch className="w-6 h-6 text-blue-400" />
-            </div>
-            <h3 className="text-xl font-bold mb-4 text-white">Unlocks Unstructured Data</h3>
-            <p className="text-slate-400 leading-relaxed">
-              Interrogate decades of scattered data in natural language. Substrata seamlessly reads scans, archaic PDFs, complex Excel returns, and historical case law.
-            </p>
-          </div>
-        </div>
-      </section>
-      
-      <footer className="border-t border-slate-800 py-12">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-500 text-sm">
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 bg-slate-700 rounded-sm" />
-            <span className="font-bold tracking-widest uppercase">Substrata</span>
-          </div>
-          <div>
-            &copy; 2026 Substrata Intelligence. All rights reserved. SOC2 Compliant.
-          </div>
-        </div>
-      </footer>
-    </main>
-  );
+</div>
+</header>
+
+<main className="flex-1 flex overflow-hidden">
+
+<div className="flex-1 relative flex flex-col"><div className="p-4 bg-surface-container-low border-b border-surface-variant z-20">
+<div className="relative group">
+<div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span className="material-symbols-outlined text-secondary text-[20px]">auto_awesome</span>
+</div>
+<input className="block w-full bg-surface-container border border-surface-variant rounded-lg py-3 pl-10 pr-24 text-body-md font-mono-data focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all text-on-surface placeholder-on-surface-variant/50" placeholder="Ask about regulatory incidents, compliance trends, or legal precedents..." type="text"/>
+<div className="absolute inset-y-0 right-0 flex items-center pr-3 gap-2">
+<button className="p-1.5 text-on-surface-variant hover:text-secondary transition-colors">
+<span className="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<div className="w-[1px] h-4 bg-surface-variant"></div>
+<button className="p-1.5 text-on-surface-variant hover:text-secondary transition-colors">
+<span className="material-symbols-outlined text-[20px]">open_in_full</span>
+</button>
+</div>
+</div>
+</div>
+<div className="flex-1 relative overflow-hidden"><img alt="Water mains network GIS map" className="absolute inset-0 w-full h-full object-cover z-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPR1pt-I84nOwgWNCwsTWX4Iwr7yOBwNBMqfN_11I7ybHBKDn-rBdW1bWYwRUkct_8V1qNwjRzNNX-U5BuWlLVQASB_fvQwGs7H7ih4tpbons8vDUdv29gWir3PJBXuS09CTb2Rq2pMw-flW5pLv-lzgxU80FCkcC9ED9-whJBQWEpoZHiSFrNMHsnhK24nRYbPjUx6qAhzfnDCfDJDK6skVcYqD37lVmmsfV8aVWdNHbyyOFtYZ5L_Q"/>
+<div className="absolute top-4 left-4 bg-surface-container p-2 rounded-lg border border-surface-variant shadow-lg flex flex-col gap-2 z-10">
+<button className="w-8 h-8 flex items-center justify-center bg-surface hover:bg-surface-container-high rounded text-on-surface transition-colors"><span className="material-symbols-outlined">add</span></button>
+<button className="w-8 h-8 flex items-center justify-center bg-surface hover:bg-surface-container-high rounded text-on-surface transition-colors"><span className="material-symbols-outlined">remove</span></button>
+<div className="w-full h-[1px] bg-surface-variant my-1"></div>
+<button className="w-8 h-8 flex items-center justify-center bg-surface hover:bg-surface-container-high rounded text-on-surface transition-colors"><span className="material-symbols-outlined">my_location</span></button>
+</div>
+
+<div className="absolute bottom-6 right-6 bg-surface-container/90 backdrop-blur border border-surface-variant rounded-lg p-4 shadow-xl z-10 w-64">
+<h3 className="font-label-caps text-on-surface-variant mb-3">Legal Regulations Impacted</h3>
+<div className="flex flex-col gap-2">
+<div className="flex items-center gap-2">
+<span className="w-3 h-3 rounded-full bg-error"></span>
+<span className="font-body-sm text-on-surface">Water Industry Act 1991</span>
+</div>
+<div className="flex items-center gap-2">
+<span className="w-3 h-3 rounded-full bg-secondary"></span>
+<span className="font-body-sm text-on-surface">Environmental Protection Act</span>
+</div>
+<div className="flex items-center gap-2">
+<span className="w-3 h-3 rounded-full bg-tertiary"></span>
+<span className="font-body-sm text-on-surface">Clean Air Act 1993</span>
+</div>
+</div>
+</div>
+
+<div className="absolute top-1/3 left-1/4 w-6 h-6 bg-error/30 rounded-full flex items-center justify-center animate-pulse">
+<div className="w-3 h-3 bg-error rounded-full border border-surface shadow-[0_0_15px_rgba(255,180,171,0.8)]"></div>
+</div>
+<div className="absolute top-1/2 left-1/2 w-8 h-8 bg-secondary/30 rounded-full flex items-center justify-center animate-pulse">
+<div className="w-4 h-4 bg-secondary rounded-full border border-surface shadow-[0_0_15px_rgba(173,198,255,0.8)]"></div>
+</div>
+<div className="absolute bottom-1/3 right-1/4 w-6 h-6 bg-error/30 rounded-full flex items-center justify-center animate-pulse">
+<div className="w-3 h-3 bg-error rounded-full border border-surface shadow-[0_0_15px_rgba(255,180,171,0.8)]"></div>
+</div>
+<div className="absolute top-1/4 right-1/3 w-5 h-5 bg-tertiary/30 rounded-full flex items-center justify-center animate-pulse">
+<div className="w-2.5 h-2.5 bg-tertiary rounded-full border border-surface shadow-[0_0_15px_rgba(185,199,224,0.8)]"></div>
+</div>
+<div className="absolute bottom-1/2 left-1/3 w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center animate-pulse">
+<div className="w-5 h-5 bg-secondary rounded-full border border-surface shadow-[0_0_20px_rgba(173,198,255,0.6)]"></div>
+</div></div>
+
+<div className="h-[200px] border-t border-surface-variant bg-surface-container-low p-4 flex gap-4 overflow-x-auto z-10">
+<div className="flex-shrink-0 w-[300px] data-card rounded-lg p-4 flex flex-col justify-between">
+<h3 className="font-label-caps text-on-surface-variant">Global Compliance Score</h3>
+<div className="flex items-end gap-2">
+<span className="font-display-lg text-secondary">84%</span>
+<span className="font-body-sm text-on-surface-variant mb-2">overall</span>
+</div>
+<div className="w-full bg-surface-variant h-2 rounded-full overflow-hidden">
+<div className="bg-secondary h-full w-[84%]"></div>
+</div>
+</div>
+<div className="flex-shrink-0 w-[300px] data-card rounded-lg p-4 flex flex-col justify-between">
+<h3 className="font-label-caps text-on-surface-variant">Incidents by Regulation</h3>
+<div className="flex items-end justify-between h-20 px-2 pb-1 border-b border-l border-surface-variant">
+<div className="w-6 bg-error h-[80%] relative group cursor-pointer"><div className="absolute -top-6 left-1/2 -translate-x-1/2 text-mono-data text-[10px] hidden group-hover:block text-on-surface bg-surface-container px-1 rounded">24</div></div>
+<div className="w-6 bg-secondary h-[40%] relative group cursor-pointer"><div className="absolute -top-6 left-1/2 -translate-x-1/2 text-mono-data text-[10px] hidden group-hover:block text-on-surface bg-surface-container px-1 rounded">12</div></div>
+<div className="w-6 bg-tertiary h-[60%] relative group cursor-pointer"><div className="absolute -top-6 left-1/2 -translate-x-1/2 text-mono-data text-[10px] hidden group-hover:block text-on-surface bg-surface-container px-1 rounded">18</div></div>
+<div className="w-6 bg-surface-variant h-[20%] relative group cursor-pointer"><div className="absolute -top-6 left-1/2 -translate-x-1/2 text-mono-data text-[10px] hidden group-hover:block text-on-surface bg-surface-container px-1 rounded">5</div></div>
+</div>
+<div className="flex justify-between px-2 mt-1 text-mono-data text-[10px] text-on-surface-variant">
+<span className="">WIA</span><span className="">EPA</span><span className="">CAA</span><span className="">OTH</span>
+</div>
+</div>
+</div>
+</div>
+
+<aside className="w-[320px] border-l border-surface-variant bg-surface-container-low flex flex-col z-10 flex-shrink-0 overflow-y-auto">
+<div className="p-4 border-b border-surface-variant sticky top-0 bg-surface-container-low z-10">
+<h2 className="font-headline-sm text-on-surface flex items-center justify-between">
+                    Active Alerts
+                    <span className="bg-error-container text-on-error-container text-[12px] px-2 py-0.5 rounded-full font-bold">3 Critical</span>
+</h2>
+</div>
+<div className="p-4 flex flex-col gap-3">
+
+<div className="bg-surface border border-error/50 rounded-lg p-3 hover:border-error transition-colors cursor-pointer border-l-4 border-l-error">
+<div className="flex justify-between items-start mb-1">
+<span className="font-mono-data text-[11px] text-error">CRITICAL • 10m ago</span>
+<span className="material-symbols-outlined text-[16px] text-on-surface-variant">more_vert</span>
+</div>
+<h4 className="font-body-sm font-bold text-on-surface mb-1">Unpermitted Discharge</h4>
+<p className="font-body-sm text-[13px] text-on-surface-variant line-clamp-2">Potential violation of WIA 1991 Sec 85. Sensors indicate elevated contamination levels at Outfall Alpha.</p>
+</div>
+
+<div className="bg-surface border border-surface-variant rounded-lg p-3 hover:border-secondary transition-colors cursor-pointer border-l-4 border-l-secondary">
+<div className="flex justify-between items-start mb-1">
+<span className="font-mono-data text-[11px] text-secondary">WARNING • 1h ago</span>
+<span className="material-symbols-outlined text-[16px] text-on-surface-variant">more_vert</span>
+</div>
+<h4 className="font-body-sm font-bold text-on-surface mb-1">Missing Compliance Report</h4>
+<p className="font-body-sm text-[13px] text-on-surface-variant line-clamp-2">Q3 EPA filing deadline approaching. Audit trail incomplete for facility Sector 7.</p>
+</div>
+
+<div className="bg-surface border border-surface-variant rounded-lg p-3 hover:border-surface-variant transition-colors cursor-pointer border-l-4 border-l-surface-variant opacity-70">
+<div className="flex justify-between items-start mb-1">
+<span className="font-mono-data text-[11px] text-on-surface-variant">INFO • 4h ago</span>
+<span className="material-symbols-outlined text-[16px] text-on-surface-variant">more_vert</span>
+</div>
+<h4 className="font-body-sm font-bold text-on-surface mb-1">System Update Complete</h4>
+<p className="font-body-sm text-[13px] text-on-surface-variant line-clamp-2">Regulatory database synched with latest legislative amendments.</p>
+</div>
+</div>
+<div className="mt-auto p-4 border-t border-surface-variant bg-surface-container-low sticky bottom-0">
+<div className="flex flex-col gap-2">
+<div className="flex items-center gap-2 p-2 rounded bg-surface border border-surface-variant bg-secondary/20">
+<span className="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span className="font-mono-data text-[10px] text-on-surface-variant tracking-wider text-secondary">SOC2 TYPE II &amp; ISO 27001 CERTIFIED</span>
+</div>
+<div className="flex items-center gap-2 p-2 rounded bg-surface border border-surface-variant bg-secondary/20">
+<span className="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span className="font-mono-data text-[10px] text-on-surface-variant tracking-wider text-secondary">CITATIONS VERIFIED</span>
+</div>
+<div className="flex items-center gap-2 p-2 rounded bg-surface border border-surface-variant bg-secondary/20">
+<span className="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span className="font-mono-data text-[10px] text-on-surface-variant tracking-wider text-secondary">ON-PREMISE / VPC</span>
+</div>
+</div>
+</div></aside>
+</main>
+</div>
+
+    </div>
+  )
 }

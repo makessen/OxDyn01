@@ -16,10 +16,16 @@ TODO
 3. An honest line on AI usage: which tool, roughly what you prompted for, where you intervened by hand. We're not testing whether you used AI - we're testing how you steered it.
 
 # 2
-A short note (≤200 words) covering:
-Name: 
-Sector:
-The single feeling you wanted the decision-maker to walk away with...
+# A short note (≤200 words) covering:
+
+| Property | Value |
+| :--- | :--- |
+| **Name** | Substrat |
+| **Sector** | Legal |
+| **Organisation** | Thames Water |
+| **Decision Maker** | Julian Gething - Chief Restructuring Officer |
+
+# The single feeling you wanted the decision-maker to walk away with... 
 
 Two design decisions you made and why
 

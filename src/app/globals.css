@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 248, 250, 252;
-  --background-start-rgb: 15, 23, 42;
-  --background-end-rgb: 15, 23, 42;
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+    background-color: theme('colors.background');
+    color: theme('colors.on-background');
+}
+.data-card {
+    background-color: theme('colors.surface-container-low');
+    border: 1px solid theme('colors.surface-variant');
+}
+.map-bg {
+    background-color: theme('colors.surface-container-lowest');
+    background-image: 
+        radial-gradient(circle at 50% 50%, theme('colors.surface-container-low') 0%, transparent 100%),
+        repeating-linear-gradient(0deg, transparent, transparent 19px, theme('colors.surface-variant') 20px),
+        repeating-linear-gradient(90deg, transparent, transparent 19px, theme('colors.surface-variant') 20px);
 }
